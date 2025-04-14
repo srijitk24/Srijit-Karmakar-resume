@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srijit Karmakar - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f4f4f4, #eaeef3);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .animated-icon {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: #111827;
+      color: white;
+      padding: 40px 20px;
+      box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .profile-pic-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-pic-box img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #60a5fa;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #60a5fa;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin: 8px 0;
+      color: #d1d5db;
+    }
+
+    .sidebar a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-left: 280px;
+      padding: 50px;
+      width: calc(100% - 280px);
+    }
+
+    .content section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .content section:hover {
+      transform: translateY(-5px);
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #1f2937;
+      border-left: 4px solid #3b82f6;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .sidebar div {
+        flex: 1 1 100%;
+      }
+
+      .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div>
+        <div class="profile-pic-box">
+          <img src="https://media.licdn.com/dms/image/v2/D4E03AQFJb81oGLvUHg/profile-displayphoto-shrink_800_800/B4EZXSFov2HgAc-/0/1742986449531?e=1750291200&v=beta&t=-j-rMsA93dgNwhjnQPbMBG4PlTCLE0YENyMDbewdvCs" alt="Srijit Karmakar Profile Picture">
+        </div>
+        <h1>Srijit Karmakar</h1>
+        <p>Aspiring Entrepreneur | BBA Student at IIM Bangalore</p>
+        <br>
+        <p><i class="fas fa-envelope"></i> srijit.karmakar24@iimb.ac.in</p>
+        <p><i class="fas fa-phone"></i> 8918936613</p>
+        <p><i class="fas fa-map-marker-alt"></i> 171/1 Ashoknagar, Kolkata</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/srijit-karmakar-0b7436331" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/srijit_sj" target="_blank">Instagram</a></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <header>
+        <h1 class="animated-icon">Welcome to My Digital Portfolio</h1>
+        <h2>Where Creativity Meets Purpose</h2>
+      </header>
+
+      <section class="about">
+        <h2>About Me</h2>
+        <p>I’m Srijit Karmakar, an aspiring entrepreneur from kolkata, currently pursuing BBA DBE at IIM Bangalore. I am an innovative and entrepreneurial-minded individual with a solid foundation in business management, strategy, and execution. With hands-on experience in healthcare, real estate management, consulting, and sales, I bring a diverse skill set and a deep passion for problem-solving, marketing, and media management. I’m adept at leadership, team management, and strategic execution, and I'm driven by a mission to solve real-world problems through innovative solutions.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <p><strong>POCKET HASPATAL (Healthcare Startup) – Founder | 2025 </strong> </p>
+        <ul>
+          <li>Conceptualized and designed a healthcare platform that empowers local clinics and doctors—especially new-age doctors—by connecting them with patients effectively.</li>
+        </ul>
+        <p><strong>Real Estate Consultant & Manager – Self-Employed | 2022 - 2024</strong></p>
+        <ul>
+          <li>Managed real estate sales, consulting, and strategic investments.</li>
+          <li>Provided end-to-end solutions for property acquisition and development.</li>
+          <li>Developed marketing strategies to enhance sales and lead generation.</li>
+        </ul>
+        <p><strong>Karmakar Enterprise – Helper & Strategy Manager | 2014 - 2019</strong></p>
+        <ul>
+          <li>Worked in uncle's pharmaceutical medicinal trade company.</li>
+          <li>Assisted in bulk purchasing and distribution of medicines to clinics and personal clients.</li>
+          <li>Led strategy and execution for sales and distribution.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p><strong>Narula Institute of Technology, Kolkata</strong><br>BTech in Civil engineering (2024-Dropout)</p>
+        <p><strong>Indian Institute of Management Bangalore</strong><br>BBA in Digital Business & Entrepreneurship (2024-2027)</p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills & Interests</h2>
+        <ul>
+          <li><B>Entrepreneurship & Innovation:</B> Creative Thinking, Solving Real-Life Problems, Critical Observation, Innovation, Execution </li>
+          <li><B>Business & Management:</B> Strategy, Marketing, Public Relations, Entrepreneurship</li>
+          <li><B>Technical Skills:</B> HTML, CSS, JavaScript, Excel, Financial Analysis </li>
+          <li><B>Creative & Media:</B> Content Creation, Storytelling, Media Management</li>
+          <li><B>Leadership & Communication:</B> Team Management, Networking</li>
+        </ul>
+      </section>
+
+      <section class="interests">
+        <h2>Personal Interests</h2>
+        <p>I'm passionate about blending technology & execution with creativity to solve meaningful problems. I enjoy crafting strategies, exploring new ideas and execution formats to enhance real-life problem-solving, and working on projects that empower people through innovation and storytelling. I have a strong interest in Marketing, Product Management, Sales, Execution, Operations, and Emerging Technologies.</p>
+        <ul>
+          <li><B>Marketing & Storytelling:</B> Crafting impactful narratives and strategies to connect with audiences</li>
+          <li><B>Product Management:</B> Ideating, developing, and refining products that address user needs</li>
+          <li><B>Sales & Execution:</B> Driving results through actionable plans and effective communication.</li>
+          <li><B>Operations:</B> Streamlining processes for efficient project delivery</li>
+          <li><B>Emerging Technologies:</B> Exploring innovative tech to empower people and build future-ready solutions</li>
+          <li><B>Innovation & Strategy:</B> Designing and executing creative solutions with a user-first mindset</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Volunteering & Extracurriculars</h2>
+        <ul>
+          <li>Tech Club Volunteer – Assisted in technology-driven projects and discussions.</li>
+          <li>School Donation Campaign – Organized fundraising for children's education and shelter.</li>
+          <li>Swimming Instructor – Provided free training sessions to students.</li>
+          <li>Emergency Assistance for the Elderly – Arranged ambulances, free check-ups, and medicine distribution.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Achievements</h2>
+        <p><strong>Winner, Nova'24 Frame It Out</strong> – An inter-zonal competition organized by IIM Bangalore. The challenge was to design a futuristic startup idea and create a no-code website. Our innovative idea and user-friendly design secured the win.</p>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>Bengali (Native)</li>
+          <li>English</li>
+          <li>Hindi</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>© 2025 Srijit Karmakar. Built with passion and purpose.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
